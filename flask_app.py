@@ -40,7 +40,7 @@ def process():
             os.chdir(destination_directory)
             command = f"python -m inference.classifier --image-path {file_path} --save-dir {path}processed_images/"
         else:
-            command = f"yolo task=detect mode=predict model=/Users/muqsitamir/PycharmProjects/RidaBackend/ultralytics/best2.pt conf=0.5 source={file_path} project=/Users/muqsitamir/PycharmProjects/RidaBackend/processed_images save"
+            command = f"yolo task=detect mode=predict model=/Users/muqsitamir/PycharmProjects/RidaBackend/ultralytics/{request.args['weights']}.pt conf=0.5 source={file_path} project=/Users/muqsitamir/PycharmProjects/RidaBackend/processed_images save"
 
         subprocess.run(command, shell=True, capture_output=True, text=True)
 
