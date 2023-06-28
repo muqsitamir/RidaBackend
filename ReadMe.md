@@ -35,3 +35,10 @@
 1. Using Pktriot and Ngrok for free self-hosting HTTP tunnels.
 2. Run `./ngrok http 5000` and any app you run on 5000 port will be tunneled to the new domain provided by ngrok to you.
 3. Use `ngrok-skip-browser-warning` header with any value to bypass browser warning.
+
+
+####Notes
+1. Processed and Posted Images directories are not added to git so you will have to create them yourself.
+
+
+In case, anyone wants to implement this for themselves and needs help, you can email me at `islammuqsit7@gmail.com`
